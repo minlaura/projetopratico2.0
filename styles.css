@@ -205,64 +205,199 @@ span {
 }
 
 @media (max-width: 768px) {
-    nav {
-        display: none;
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     #banner {
-        background-position: 40%;
-        height: 300px; /* Reduzir a altura para melhor visualização em dispositivos móveis */
+        height: 200px;
     }
 
-    #teasercont {
+    iframe {
         width: 100%;
         height: auto;
-        display: flex;
+    }
+
+    .integrantescard {
         flex-direction: column;
         align-items: center;
-        padding: 20px; /* Adicionado padding para espaçamento interno */
-    }
-
-    .content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px; /* Adicionado padding para espaçamento interno */
-    }
-
-    .teaser {
-        width: 100%;
-        margin-bottom: 20px; /* Adicionada margem inferior para espaçamento */
-    }
-
-    #sinopse {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0; /* Removida margem esquerda */
-        padding: 10px; /* Adicionado padding para espaçamento interno */
-    }
-
-    .description {
-        width: 100%;
-        text-align: center; /* Alinhamento centralizado */
-        margin-bottom: 20px; /* Adicionada margem inferior */
-    }
-
-    .button {
-        width: 80%; /* Ajustada largura para 80% */
-        margin-top: 20px; /* Reduzida margem superior */
     }
 
     .cards-content {
-        grid-template-columns: 1fr; /* Uma coluna para melhor visualização no celular */
-        gap: 20px; /* Adicionado gap para espaçamento */
-        margin-top: 50px; /* Ajustada margem superior */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer-navigation {
-        display: block;
+    .card {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .integrantescard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .integrantescard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;  /* Espaçamento entre os cards */
+        width: 90%;  /* Reduz a largura para melhor ajuste */
+    }
+
+    .card {
+        width: 100%;  /* Garante que os cards ocupem a largura total disponível */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        height: 40px;
+    }
+
+    nav li {
+        margin-top: 5px;
+    }
+
+    #banner {
+        height: 150px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    .cards-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;  /* Espaçamento entre os cards */
+        width: 90%;  /* Reduz a largura para melhor ajuste */
+    }
+
+    .card {
+        width: 100%;  /* Garante que os cards ocupem a largura total disponível */
+        padding: 20px;  /* Aumenta o padding para melhor visualização */
+        text-align: center;
+        background-color: #f0f0f0;
     }
 }
